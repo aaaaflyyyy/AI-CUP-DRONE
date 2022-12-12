@@ -1,0 +1,9 @@
+# path
+train: ../datasets/DRONE/yolov7format_v1_multiscale/images/train
+val: ../datasets/DRONE/yolov7format_v1_multiscale/images/val
+
+# number of classes
+nc: 4
+
+# class names
+names: [ car, hov, person, motorcycle]
