@@ -22,7 +22,7 @@ AI-CUP-DRONE
 |   ...
 ```
 
-## 3. 準備訓練資料
+## 2. 準備訓練資料
 安裝環境
 ```
 pip install opencv-python albumentations
@@ -62,13 +62,13 @@ names: [ car, hov, person, motorcycle]
 
 ```
 
-## 4. Train
+## 3. Train
 ```
 cd ../../yolov7
 python train.py --data ../datasets/DRONE/drone.yaml --epochs 100 --batch-size 8 --img-size 1280 --workers 4 --name drone_mutiscale
 ```
 
-## 5. detect
+## 4. detect
 ```
 python detect.py --weights runs/train/drone/weights/best.pt --source ../datasets/DRONE/test/ --img-size 1280 --device 3 --name drone --save-txt
 
